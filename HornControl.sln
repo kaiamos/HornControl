@@ -5,7 +5,7 @@ VisualStudioVersion = 17.10.34928.147
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{48D39A95-0D27-4AB0-A89E-0028B1B9FCF3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HornControlDemo", "src\HornControlDemo\HornControlDemo.csproj", "{E0F1853E-F195-4367-A75A-67B1DFF8170A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HornControlDemo", "src\HornControlDemo\HornControlDemo.csproj", "{E0F1853E-F195-4367-A75A-67B1DFF8170A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "shared", "shared", "{AA446390-A9E4-44FD-B0B4-3C940568F9CF}"
 EndProject
@@ -19,6 +19,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GoableConfig", "GoableConfi
 	EndProjectSection
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "HornControl.Common", "src\shared\HornControl.Common\HornControl.Common.shproj", "{E95FCEB0-75D7-48B0-B571-8D8AA9EB804A}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "HornControl.Service", "HornControl.Service\HornControl.Service.shproj", "{B790CFF8-D3E0-457C-9EB1-B065C26F68EF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -38,11 +40,13 @@ Global
 		{E0F1853E-F195-4367-A75A-67B1DFF8170A} = {48D39A95-0D27-4AB0-A89E-0028B1B9FCF3}
 		{AA446390-A9E4-44FD-B0B4-3C940568F9CF} = {48D39A95-0D27-4AB0-A89E-0028B1B9FCF3}
 		{E95FCEB0-75D7-48B0-B571-8D8AA9EB804A} = {AA446390-A9E4-44FD-B0B4-3C940568F9CF}
+		{B790CFF8-D3E0-457C-9EB1-B065C26F68EF} = {AA446390-A9E4-44FD-B0B4-3C940568F9CF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {427BB5F7-64CF-4D81-AC18-8497AD664CC8}
 	EndGlobalSection
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		HornControl.Service\HornControl.Service.projitems*{b790cff8-d3e0-457c-9eb1-b065c26f68ef}*SharedItemsImports = 13
 		src\shared\HornControl.Common\HornControl.Common.projitems*{e95fceb0-75d7-48b0-b571-8d8aa9eb804a}*SharedItemsImports = 13
 	EndGlobalSection
 EndGlobal
