@@ -5,6 +5,10 @@ VisualStudioVersion = 17.10.34928.147
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{48D39A95-0D27-4AB0-A89E-0028B1B9FCF3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HornControlDemo", "src\HornControlDemo\HornControlDemo.csproj", "{E0F1853E-F195-4367-A75A-67B1DFF8170A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "shared", "shared", "{AA446390-A9E4-44FD-B0B4-3C940568F9CF}"
+EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GoableConfig", "GoableConfig", "{A7D51C1C-5C49-4F1F-AD4A-D2D63A50E21F}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
@@ -88,5 +92,8 @@ Global
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {427BB5F7-64CF-4D81-AC18-8497AD664CC8}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		src\shared\HornControl.Common\HornControl.Common.projitems*{e95fceb0-75d7-48b0-b571-8d8aa9eb804a}*SharedItemsImports = 13
 	EndGlobalSection
 EndGlobal
