@@ -5,23 +5,20 @@ VisualStudioVersion = 17.10.34928.147
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{48D39A95-0D27-4AB0-A89E-0028B1B9FCF3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HornControlDemo", "src\HornControlDemo\HornControlDemo.csproj", "{E0F1853E-F195-4367-A75A-67B1DFF8170A}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "shared", "shared", "{AA446390-A9E4-44FD-B0B4-3C940568F9CF}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GoableConfig", "GoableConfig", "{A7D51C1C-5C49-4F1F-AD4A-D2D63A50E21F}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
 		.gitignore = .gitignore
 		Directory.Build.props = Directory.Build.props
+		K.ico = K.ico
+		K.png = K.png
+		K.svg = K.svg
 		LICENSE = LICENSE
 		NuGet.config = NuGet.config
 		README.md = README.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01-App", "01-App", "{0A381DB2-0CBC-4A90-AA80-EEF7A3733B29}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HornControlDemo", "src\Application\HornControlDemo\HornControlDemo.csproj", "{C5DEAF7D-6C2B-401F-A573-88C0ACB5E625}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02-Service", "02-Service", "{817D1A45-7AD9-444C-9C54-D131D699CE89}"
 EndProject
@@ -31,17 +28,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04-Control", "04-Control", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05-Common", "05-Common", "{74A9A0C7-E7D4-4003-993D-6C8DDA40B29E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HornControl.Foundation", "src\Foundation\HornControl.Foundation\HornControl.Foundation.csproj", "{5259E475-8AA2-4B83-8643-99EAF3EC8E25}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HornControl.Foundation", "src\Foundation\HornControl.Foundation\HornControl.Foundation.csproj", "{5259E475-8AA2-4B83-8643-99EAF3EC8E25}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HornControl.Theme", "src\Foundation\HornControl.Theme\HornControl.Theme.csproj", "{A51A38A9-21B0-43DF-835A-5D213B0079A9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HornControl.Theme", "src\Foundation\HornControl.Theme\HornControl.Theme.csproj", "{A51A38A9-21B0-43DF-835A-5D213B0079A9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HornControl.Resource", "src\Foundation\HornControl.Resource\HornControl.Resource.csproj", "{94263867-5B6A-4A61-A7A5-A4C0D4F110F4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HornControl.Resource", "src\Foundation\HornControl.Resource\HornControl.Resource.csproj", "{94263867-5B6A-4A61-A7A5-A4C0D4F110F4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HornControl.Style", "src\Foundation\HornControl.Style\HornControl.Style.csproj", "{7D67A38D-C00B-4898-80D7-9D59B12B1B27}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HornControl.Style", "src\Foundation\HornControl.Style\HornControl.Style.csproj", "{7D67A38D-C00B-4898-80D7-9D59B12B1B27}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HornControl.WpfHost", "src\Service\HornControl.WpfHost\HornControl.WpfHost.csproj", "{CCB0AC50-36EA-4F51-AF7E-16F1971D9159}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HornControl.WpfHost", "src\Service\HornControl.WpfHost\HornControl.WpfHost.csproj", "{CCB0AC50-36EA-4F51-AF7E-16F1971D9159}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{FF6B5709-91A7-4E64-9EE7-89D96323D5DC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HornControlDemo", "src\Application\HornControlDemo\HornControlDemo.csproj", "{5B76CA27-381D-4AB8-BA55-E16A60ECD3E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HornControl.Control", "src\Control\HornControl.Control\HornControl.Control.csproj", "{DC162D73-A28C-4CB4-B365-5499A8919FEA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,10 +50,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C5DEAF7D-6C2B-401F-A573-88C0ACB5E625}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C5DEAF7D-6C2B-401F-A573-88C0ACB5E625}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C5DEAF7D-6C2B-401F-A573-88C0ACB5E625}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C5DEAF7D-6C2B-401F-A573-88C0ACB5E625}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5259E475-8AA2-4B83-8643-99EAF3EC8E25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5259E475-8AA2-4B83-8643-99EAF3EC8E25}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5259E475-8AA2-4B83-8643-99EAF3EC8E25}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -73,13 +70,20 @@ Global
 		{CCB0AC50-36EA-4F51-AF7E-16F1971D9159}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CCB0AC50-36EA-4F51-AF7E-16F1971D9159}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CCB0AC50-36EA-4F51-AF7E-16F1971D9159}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B76CA27-381D-4AB8-BA55-E16A60ECD3E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B76CA27-381D-4AB8-BA55-E16A60ECD3E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B76CA27-381D-4AB8-BA55-E16A60ECD3E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B76CA27-381D-4AB8-BA55-E16A60ECD3E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC162D73-A28C-4CB4-B365-5499A8919FEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC162D73-A28C-4CB4-B365-5499A8919FEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC162D73-A28C-4CB4-B365-5499A8919FEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC162D73-A28C-4CB4-B365-5499A8919FEA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{0A381DB2-0CBC-4A90-AA80-EEF7A3733B29} = {48D39A95-0D27-4AB0-A89E-0028B1B9FCF3}
-		{C5DEAF7D-6C2B-401F-A573-88C0ACB5E625} = {0A381DB2-0CBC-4A90-AA80-EEF7A3733B29}
 		{817D1A45-7AD9-444C-9C54-D131D699CE89} = {48D39A95-0D27-4AB0-A89E-0028B1B9FCF3}
 		{BF6634B9-C8DB-45D2-A1CA-AD63F7066C3C} = {48D39A95-0D27-4AB0-A89E-0028B1B9FCF3}
 		{61C410AD-7A31-438E-AC9A-59B8F3610EA6} = {48D39A95-0D27-4AB0-A89E-0028B1B9FCF3}
@@ -89,11 +93,10 @@ Global
 		{94263867-5B6A-4A61-A7A5-A4C0D4F110F4} = {BF6634B9-C8DB-45D2-A1CA-AD63F7066C3C}
 		{7D67A38D-C00B-4898-80D7-9D59B12B1B27} = {BF6634B9-C8DB-45D2-A1CA-AD63F7066C3C}
 		{CCB0AC50-36EA-4F51-AF7E-16F1971D9159} = {817D1A45-7AD9-444C-9C54-D131D699CE89}
+		{5B76CA27-381D-4AB8-BA55-E16A60ECD3E1} = {0A381DB2-0CBC-4A90-AA80-EEF7A3733B29}
+		{DC162D73-A28C-4CB4-B365-5499A8919FEA} = {61C410AD-7A31-438E-AC9A-59B8F3610EA6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {427BB5F7-64CF-4D81-AC18-8497AD664CC8}
-	EndGlobalSection
-	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		src\shared\HornControl.Common\HornControl.Common.projitems*{e95fceb0-75d7-48b0-b571-8d8aa9eb804a}*SharedItemsImports = 13
 	EndGlobalSection
 EndGlobal
