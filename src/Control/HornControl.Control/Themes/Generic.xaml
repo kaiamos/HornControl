@@ -1,18 +1,26 @@
 <ResourceDictionary
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="clr-namespace:HornControl.Controls">
+    xmlns:k="https://github.com/kaiamos">
 
-    <Style TargetType="{x:Type local:BaseWindow}">
-        <Setter Property="Template">
-            <Setter.Value>
-                <ControlTemplate TargetType="{x:Type local:BaseWindow}">
-                    <Border
-                        Background="{TemplateBinding Background}"
-                        BorderBrush="{TemplateBinding BorderBrush}"
-                        BorderThickness="{TemplateBinding BorderThickness}" />
-                </ControlTemplate>
-            </Setter.Value>
-        </Setter>
+
+
+    <Style x:Key="BaseWindow.Default" TargetType="{x:Type k:BaseWindow}">
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="BorderBrush" Value="#262e2f" />
+        <Setter Property="Background" Value="{DynamicResource SecondaryRegionBrush}" />
+        <Setter Property="Foreground" Value="{DynamicResource PrimaryTextBrush}" />
+        <Setter Property="UseLayoutRounding" Value="True" />
+        <Setter Property="NonClientAreaBackground" Value="{DynamicResource RegionBrush}" />
+        <Setter Property="NonClientAreaForeground" Value="{DynamicResource PrimaryTextBrush}" />
+        <Setter Property="CloseButtonBackground" Value="Transparent" />
+        <Setter Property="CloseButtonForeground" Value="{DynamicResource PrimaryTextBrush}" />
+        <Setter Property="CloseButtonHoverBackground" Value="#e81123" />
+        <Setter Property="CloseButtonHoverForeground" Value="White" />
+        <Setter Property="OtherButtonBackground" Value="Transparent" />
+        <Setter Property="OtherButtonForeground" Value="{DynamicResource PrimaryTextBrush}" />
+        <Setter Property="OtherButtonHoverBackground" Value="{DynamicResource DarkMaskBrush}" />
+        <Setter Property="OtherButtonHoverForeground" Value="{DynamicResource PrimaryTextBrush}" />
+        <Setter Property="Template" Value="{StaticResource WindowWin10Template}" />
     </Style>
 </ResourceDictionary>

@@ -7,4 +7,8 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\Foundation\HornControl.Resource\HornControl.Resource.csproj" />
+  </ItemGroup>
+
 </Project>

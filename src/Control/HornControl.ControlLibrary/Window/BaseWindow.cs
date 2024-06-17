@@ -13,9 +13,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace HornControl.Control.Controls
+namespace HornControl.ControlLibrary
 {
-    
     public class BaseWindow : Window
     {
         static BaseWindow()

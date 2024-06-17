@@ -14,7 +14,8 @@ using System.Windows.Markup;
 
 // 如果此项目向 COM 公开，则下列 GUID 用于 typelib 的 ID。
 
-[assembly: Guid("4c8f94c4-5ac1-4ebe-954a-9801ede0c2bc")]
+[assembly: Guid("723a73b5-46fc-4633-b92c-57d877a77598")]
+
 //自定义xmlns
-[assembly: XmlnsDefinition("https://github.com/kaiamos", "HornControl.Controls")]
+[assembly: XmlnsDefinition("https://github.com/kaiamos", "HornControl.ControlLibrary")]
 [assembly: XmlnsPrefix("https://github.com/kaiamos", "k")]

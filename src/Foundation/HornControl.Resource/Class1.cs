@@ -1,7 +1,9 @@
 
+using System.Windows;
+
 namespace HornControl.Resource
 {
-    public class Class1
+    public class ResourceKeys
     {
     }
 
