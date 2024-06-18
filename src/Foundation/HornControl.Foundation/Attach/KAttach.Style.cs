@@ -17,6 +17,7 @@ namespace HornControl.Foundation.Attach
         /// </summary>
         public static readonly DependencyProperty StyleTypeProperty = 
             DependencyProperty.RegisterAttached("StyleType",typeof(StyleType),typeof(KAttach),new PropertyMetadata(default(StyleType)));
+        
         public static StyleType GetStyleType(DependencyObject obj)
         {
             return (StyleType)obj.GetValue(StyleTypeProperty);

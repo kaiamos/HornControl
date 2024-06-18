@@ -1,0 +1,38 @@
+﻿<Window
+    x:Class="HornControl.FontTest.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:f="clr-namespace:HornControl.Foundation;assembly=HornControl.Foundation"
+    xmlns:local="clr-namespace:HornControl.FontTest"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="MainWindow"
+    Width="800"
+    Height="450"
+    TaskbarItemInfo="{StaticResource TaskbarItemInfo.Default}"
+    mc:Ignorable="d">
+    <Window.Resources />
+    <StackPanel>
+        <TextBlock FontFamily="{StaticResource FontFamily}">我是一缕孤烟 amos</TextBlock>
+        <TextBlock>我是一缕孤烟 amos</TextBlock>
+        <StackPanel Orientation="Vertical">
+            <TextBlock
+                VerticalAlignment="Center"
+                FontFamily="{StaticResource FontFamily}"
+                FontSize="50"
+                Foreground="Red"
+                Text="&#xE711;" />
+            <TextBlock
+                Name="btnSettingTimingText"
+                Margin="5,0,0,0"
+                FontSize="50"
+                Text="2024-10-10" />
+            <Button
+                Height="30"
+                FontSize="20"
+                Foreground="Red">
+                <Image Source="{f:Image SymbolSize=20, SymbolCode=0xE71A}" Stretch="None" />
+            </Button>
+        </StackPanel>
+    </StackPanel>
+</Window>

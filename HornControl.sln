@@ -47,6 +47,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HornControlDemo", "src\Appl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HornControl.ControlLibrary", "src\Control\HornControl.ControlLibrary\HornControl.ControlLibrary.csproj", "{7DC68483-B298-46C4-AF42-B4AD103397C8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HornControl.FontTest", "src\Test\HornControl.FontTest\HornControl.FontTest.csproj", "{6978446C-0B57-4159-BB56-AFE188DE8D87}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06-Test", "06-Test", "{864454F6-E9CE-4B9F-8C0F-2D9240F8F091}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +85,10 @@ Global
 		{7DC68483-B298-46C4-AF42-B4AD103397C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7DC68483-B298-46C4-AF42-B4AD103397C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7DC68483-B298-46C4-AF42-B4AD103397C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6978446C-0B57-4159-BB56-AFE188DE8D87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6978446C-0B57-4159-BB56-AFE188DE8D87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6978446C-0B57-4159-BB56-AFE188DE8D87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6978446C-0B57-4159-BB56-AFE188DE8D87}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -98,6 +106,8 @@ Global
 		{CCB0AC50-36EA-4F51-AF7E-16F1971D9159} = {817D1A45-7AD9-444C-9C54-D131D699CE89}
 		{5B76CA27-381D-4AB8-BA55-E16A60ECD3E1} = {0A381DB2-0CBC-4A90-AA80-EEF7A3733B29}
 		{7DC68483-B298-46C4-AF42-B4AD103397C8} = {61C410AD-7A31-438E-AC9A-59B8F3610EA6}
+		{6978446C-0B57-4159-BB56-AFE188DE8D87} = {864454F6-E9CE-4B9F-8C0F-2D9240F8F091}
+		{864454F6-E9CE-4B9F-8C0F-2D9240F8F091} = {48D39A95-0D27-4AB0-A89E-0028B1B9FCF3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {427BB5F7-64CF-4D81-AC18-8497AD664CC8}

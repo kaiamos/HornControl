@@ -1,0 +1,32 @@
+﻿<Application
+    x:Class="HornControl.FontTest.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:f="clr-namespace:HornControl.Foundation;assembly=HornControl.Foundation"
+    xmlns:local="clr-namespace:HornControl.FontTest"
+    StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary>
+                    <FontFamily x:Key="FontFamily">
+                        pack://application:,,,/HornControl.Resource;component/Font/Microsoft/SegMDL2.ttf#Segoe MDL2 Assets
+                    </FontFamily>
+                    <TaskbarItemInfo
+                        x:Key="TaskbarItemInfo.Default"
+                        Description="{Binding RelativeSource={RelativeSource Mode=Self}, Path=ProgressValue}"
+                        ProgressState="None"
+                        ProgressValue="1">
+                        <TaskbarItemInfo.ThumbButtonInfos>
+                            <ThumbButtonInfo
+                                Description="最大化"
+                                ImageSource="{f:Image SymbolCode=0xE922,
+                                                      SymbolSize=16}"
+                                IsBackgroundVisible="False" />
+                        </TaskbarItemInfo.ThumbButtonInfos>
+                    </TaskbarItemInfo>
+                </ResourceDictionary>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

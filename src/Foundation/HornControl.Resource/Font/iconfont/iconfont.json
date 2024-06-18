@@ -1,0 +1,142 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "967",
+      "name": "冰箱",
+      "font_class": "bingxiang",
+      "unicode": "f002b",
+      "unicode_decimal": 983083
+    },
+    {
+      "icon_id": "1008",
+      "name": "间隔符号",
+      "font_class": "jiangefuhao",
+      "unicode": "f004f",
+      "unicode_decimal": 983119
+    },
+    {
+      "icon_id": "1027",
+      "name": "气泡",
+      "font_class": "qipao",
+      "unicode": "f0062",
+      "unicode_decimal": 983138
+    },
+    {
+      "icon_id": "1028",
+      "name": "日历",
+      "font_class": "rili",
+      "unicode": "f0063",
+      "unicode_decimal": 983139
+    },
+    {
+      "icon_id": "1254",
+      "name": "喜爱",
+      "font_class": "xiai",
+      "unicode": "f0145",
+      "unicode_decimal": 983365
+    },
+    {
+      "icon_id": "120191",
+      "name": "咖啡",
+      "font_class": "kafei",
+      "unicode": "e6aa",
+      "unicode_decimal": 59050
+    },
+    {
+      "icon_id": "146070",
+      "name": "日历_填充",
+      "font_class": "rilitianchong",
+      "unicode": "e6ae",
+      "unicode_decimal": 59054
+    },
+    {
+      "icon_id": "918776",
+      "name": "向右滑动",
+      "font_class": "xiangyouhuadong",
+      "unicode": "e66d",
+      "unicode_decimal": 58989
+    },
+    {
+      "icon_id": "925476",
+      "name": "咖啡",
+      "font_class": "kafei1",
+      "unicode": "e646",
+      "unicode_decimal": 58950
+    },
+    {
+      "icon_id": "925478",
+      "name": "乐器",
+      "font_class": "leqi",
+      "unicode": "e648",
+      "unicode_decimal": 58952
+    },
+    {
+      "icon_id": "1048859",
+      "name": "发送",
+      "font_class": "icon_sent",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "1418205",
+      "name": "发送",
+      "font_class": "fasong",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "1790014",
+      "name": "控件",
+      "font_class": "kongjian",
+      "unicode": "e6d7",
+      "unicode_decimal": 59095
+    },
+    {
+      "icon_id": "1810268",
+      "name": "音符",
+      "font_class": "icon-test",
+      "unicode": "e6e0",
+      "unicode_decimal": 59104
+    },
+    {
+      "icon_id": "3719202",
+      "name": "气泡",
+      "font_class": "qipao1",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    },
+    {
+      "icon_id": "4933871",
+      "name": "线",
+      "font_class": "xian",
+      "unicode": "ec1f",
+      "unicode_decimal": 60447
+    },
+    {
+      "icon_id": "7450649",
+      "name": "音乐",
+      "font_class": "yinle",
+      "unicode": "e667",
+      "unicode_decimal": 58983
+    },
+    {
+      "icon_id": "11671485",
+      "name": "查询",
+      "font_class": "chaxun",
+      "unicode": "e660",
+      "unicode_decimal": 58976
+    },
+    {
+      "icon_id": "15838444",
+      "name": "close",
+      "font_class": "close",
+      "unicode": "e668",
+      "unicode_decimal": 58984
+    }
+  ]
+}

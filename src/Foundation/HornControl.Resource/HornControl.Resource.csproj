@@ -7,4 +7,15 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Font\iconfont\iconfont.ttf" />
+    <None Remove="Font\Microsoft\SegMDL2.ttf" />
+    <None Remove="Font\SegoeMDL2Assets.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Font\iconfont\iconfont.ttf" />
+    <Resource Include="Font\Microsoft\SegMDL2.ttf" />
+  </ItemGroup>
+
 </Project>

@@ -17,7 +17,7 @@ namespace HornControl.Foundation
         /// </summary>
         Light,
         /// <summary>
-        /// 明亮类型
+        /// 黑暗类型类型
         /// </summary>
         Dark,
     }
