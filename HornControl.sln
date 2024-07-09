@@ -7,15 +7,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{48D39A95-0D2
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GoableConfig", "GoableConfig", "{A7D51C1C-5C49-4F1F-AD4A-D2D63A50E21F}"
 	ProjectSection(SolutionItems) = preProject
-		.editorconfig = .editorconfig
-		.gitignore = .gitignore
-		Directory.Build.props = Directory.Build.props
+		..\..\github\lepoco\wpfui\.editorconfig = ..\..\github\lepoco\wpfui\.editorconfig
+		ClearCode.bat = ClearCode.bat
 		K.ico = K.ico
+		Directory1.Build.props = Directory1.Build.props
 		K.png = K.png
-		K.svg = K.svg
-		LICENSE = LICENSE
 		NuGet.config = NuGet.config
-		README.md = README.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01-App", "01-App", "{0A381DB2-0CBC-4A90-AA80-EEF7A3733B29}"
@@ -42,6 +39,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{FF6B5709-9
 	ProjectSection(SolutionItems) = preProject
 		Controls.md = Controls.md
 		Project Introduction.md = Project Introduction.md
+		README.md = README.md
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HornControlDemo", "src\Application\HornControlDemo\HornControlDemo.csproj", "{5B76CA27-381D-4AB8-BA55-E16A60ECD3E1}"
@@ -58,7 +56,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HornTool.DependencyInjectio
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HornTest.ClassTest", "src\Test\HornTest.ClassTest\HornTest.ClassTest.csproj", "{9A72FE6D-F92F-4DFA-9138-32A3BC60A74D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HornControl.Designer", "src\Control\HornControl.Designer\HornControl.Designer.csproj", "{3A780616-A1B3-452C-9EAD-3945D03956A4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HornControl.Designer", "src\Control\HornControl.Designer\HornControl.Designer.csproj", "{3A780616-A1B3-452C-9EAD-3945D03956A4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

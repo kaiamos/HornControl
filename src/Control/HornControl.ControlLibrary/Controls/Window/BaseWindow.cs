@@ -14,7 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace HornControl.ControlLibrary
+namespace HornControl.ControlLibrary.Controls
 {
     public class BaseWindow : Window
     {
@@ -28,9 +28,9 @@ namespace HornControl.ControlLibrary
             //将窗体设置到屏幕中心位置
             this.WindowStartupLocation = WindowStartupLocation.CenterScreen;
             //样式中任务栏绑定的三个命令
-            this.MaximizeWindowCommand = new RoutedUICommand();
-            this.MinimizeWindowCommand = new RoutedUICommand();
-            this.CloseWindowCommand = new RoutedUICommand();
+            MaximizeWindowCommand = new RoutedUICommand();
+            MinimizeWindowCommand = new RoutedUICommand();
+            CloseWindowCommand = new RoutedUICommand();
             this.UIelementCommandBinding(MaximizeWindowCommand);
             this.UIelementCommandBinding(MinimizeWindowCommand);
             this.UIelementCommandBinding(CloseWindowCommand, CloseCommand_Execute);
@@ -39,9 +39,9 @@ namespace HornControl.ControlLibrary
 
         #region 命令
 
-        public ICommand? CloseWindowCommand { get; protected set; }
-        public ICommand? MaximizeWindowCommand { get; protected set; }
-        public ICommand? MinimizeWindowCommand { get; protected set; }
+        public ICommand CloseWindowCommand { get; protected set; }
+        public ICommand MaximizeWindowCommand { get; protected set; }
+        public ICommand MinimizeWindowCommand { get; protected set; }
 
         private void CloseCommand_Execute(object sender, ExecutedRoutedEventArgs e)
         {
@@ -57,7 +57,7 @@ namespace HornControl.ControlLibrary
           DependencyProperty.Register(nameof(ShowWindowAnimation), typeof(Action<BaseWindow>), typeof(BaseWindow),
               new PropertyMetadata(default(Action<BaseWindow>), (d, e) =>
               {
-                  BaseWindow? control = d as BaseWindow;
+                  BaseWindow control = d as BaseWindow;
                   if (control != null)
                   {
                       //Action<BaseWindow> config = e.NewValue as Action<BaseWindow>;
@@ -71,9 +71,9 @@ namespace HornControl.ControlLibrary
         /// <summary>
         /// 打开窗口的动画
         /// </summary>
-        Action<BaseWindow>? ShowWindowAnimation
+        Action<BaseWindow> ShowWindowAnimation
         {
-            get { return (Action<BaseWindow>?)GetValue(ShowWindowAnimationProperty); }
+            get { return (Action<BaseWindow>)GetValue(ShowWindowAnimationProperty); }
             set { SetValue(ShowWindowAnimationProperty, value); }
         }
         #endregion
@@ -83,7 +83,7 @@ namespace HornControl.ControlLibrary
         public static readonly DependencyProperty CloseWindowAnimationProperty =
            DependencyProperty.Register(nameof(CloseWindowAnimation), typeof(Action<BaseWindow>), typeof(BaseWindow), new PropertyMetadata(default(Action<BaseWindow>), (d, e) =>
            {
-               BaseWindow? control = d as BaseWindow;
+               BaseWindow control = d as BaseWindow;
                if (control != null)
                {
                    // Action<BaseWindow> config = e.NewValue as Action<BaseWindow>;
@@ -97,15 +97,15 @@ namespace HornControl.ControlLibrary
         /// <summary>
         /// 关闭窗口的动画
         /// </summary>
-        Action<BaseWindow>? CloseWindowAnimation
+        Action<BaseWindow> CloseWindowAnimation
         {
-            get { return (Action<BaseWindow>?)GetValue(CloseWindowAnimationProperty); }
+            get { return (Action<BaseWindow>)GetValue(CloseWindowAnimationProperty); }
             set { SetValue(CloseWindowAnimationProperty, value); }
         }
         #endregion
 
         #endregion
-        public new bool? ShowDialog()
+        public new bool ShowDialog()
         {
             return base.ShowDialog();
         }
@@ -117,7 +117,7 @@ namespace HornControl.ControlLibrary
 
         public void BeginClose()
         {
-            this.CloseWindowAnimation?.Invoke(this);
+            CloseWindowAnimation?.Invoke(this);
         }
 
         public virtual void RefreshHide()
@@ -127,12 +127,12 @@ namespace HornControl.ControlLibrary
         public virtual void Show(bool value)
         {
             IWindowAnimationService animation = ServiceRegistry.Instance.GetInstance<IWindowAnimationService>();
-            
+
             if (animation == null)
             {
                 if (value)
                 {
-                    this.Show();
+                    Show();
                 }
                 else
                 {

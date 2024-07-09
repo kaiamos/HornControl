@@ -2,13 +2,12 @@
 	<PropertyGroup>
 		<UseWPF>true</UseWPF>
 		<Version>1.0.0</Version>
-		
 		<LangVersion>latest</LangVersion>
 		<Copyright>Copyright © xukai 2024</Copyright>
 		<Authors>xukai</Authors>
 		<RepositoryUrl>https://gitee.com/kamos/HornControl;</RepositoryUrl>
 	</PropertyGroup>
 	<PropertyGroup>
-		<PackagesCommonFrameworks>net6.0-windows;net8.0-windows;net481;net462</PackagesCommonFrameworks>
+		<PackagesCommonFrameworks>net6.0-windows;net8.0-windows;net481;net461</PackagesCommonFrameworks>
 	</PropertyGroup>
 </Project>

@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-	  <TargetFrameworks>${PackagesCommonFrameworks}</TargetFrameworks>
+	  <TargetFrameworks>net461;net6.0-windows</TargetFrameworks>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
     <ImplicitUsings>enable</ImplicitUsings>
@@ -26,6 +26,12 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\Foundation\HornControl.Foundation\HornControl.Foundation.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Controls\Window\FluentWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
   </ItemGroup>
 
 </Project>
