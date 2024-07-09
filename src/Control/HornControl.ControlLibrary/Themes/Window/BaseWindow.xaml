@@ -42,6 +42,7 @@
         <Setter Property="WindowStyle" Value="None" />
         <Setter Property="ResizeMode" Value="CanResize" />
         <Setter Property="WindowChrome.WindowChrome" Value="{StaticResource ResourceKey=WindowChrome.Default}" />
+        <Setter Property="TaskbarItemInfo" Value="{StaticResource ResourceKey=TaskbarItemInfo.Default}" />
         <Setter Property="Width" Value="480" />
         <Setter Property="Height" Value="320" />
         <Setter Property="Padding" Value="15" />
