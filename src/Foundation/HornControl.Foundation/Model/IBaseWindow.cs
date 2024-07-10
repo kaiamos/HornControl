@@ -6,7 +6,7 @@ using System.Windows.Input;
 namespace HornControl.Foundation.Model
 {
     /// <summary>
-    /// 基础窗口接口
+    /// 基础窗口接口.
     /// </summary>
     public interface IBaseWindow
     {

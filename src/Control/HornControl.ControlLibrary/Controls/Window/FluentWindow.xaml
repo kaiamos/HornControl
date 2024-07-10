@@ -1,4 +1,14 @@
-﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-    
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:controls="clr-namespace:HornControl.ControlLibrary.Controls">
+
+    <Style
+        x:Key="DefaultFluentWindowStyle"
+        BasedOn="{StaticResource {x:Type Window}}"
+        TargetType="{x:Type controls:FluentWindow}">
+        <Setter Property="Background" Value="{DynamicResource ResourceKey=}" />
+    </Style>
+
+    <Style TargetType="{x:Type controls:FluentWindow}" />
 </ResourceDictionary>

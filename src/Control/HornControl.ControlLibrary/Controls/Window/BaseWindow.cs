@@ -16,28 +16,39 @@ using System.Windows.Shapes;
 
 namespace HornControl.ControlLibrary.Controls
 {
-    public class BaseWindow : Window
+    /// <summary>
+    /// 基础窗口.
+    /// </summary>
+    public class BaseWindow : System.Windows.Window
     {
         static BaseWindow()
         {
             DefaultStyleKeyProperty.OverrideMetadata(typeof(BaseWindow), new FrameworkPropertyMetadata(typeof(BaseWindow)));
         }
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="BaseWindow"/> class.
+        /// </summary>
         public BaseWindow()
         {
-            //将窗体设置到屏幕中心位置
+            // 将窗体设置到屏幕中心位置
             this.WindowStartupLocation = WindowStartupLocation.CenterScreen;
-            //样式中任务栏绑定的三个命令
+
+            // 样式中任务栏绑定的三个命令
             MaximizeWindowCommand = new RoutedUICommand();
+
             MinimizeWindowCommand = new RoutedUICommand();
+
             CloseWindowCommand = new RoutedUICommand();
+
             this.UIelementCommandBinding(MaximizeWindowCommand);
+
             this.UIelementCommandBinding(MinimizeWindowCommand);
+
             this.UIelementCommandBinding(CloseWindowCommand, CloseCommand_Execute);
         }
 
 
-        #region 命令
 
         public ICommand CloseWindowCommand { get; protected set; }
         public ICommand MaximizeWindowCommand { get; protected set; }
@@ -45,13 +56,9 @@ namespace HornControl.ControlLibrary.Controls
 
         private void CloseCommand_Execute(object sender, ExecutedRoutedEventArgs e)
         {
-
         }
-        #endregion
+        
 
-        #region 属性
-
-        #region ShowWindowAnimation
 
         public static readonly DependencyProperty ShowWindowAnimationProperty =
           DependencyProperty.Register(nameof(ShowWindowAnimation), typeof(Action<BaseWindow>), typeof(BaseWindow),
@@ -76,9 +83,7 @@ namespace HornControl.ControlLibrary.Controls
             get { return (Action<BaseWindow>)GetValue(ShowWindowAnimationProperty); }
             set { SetValue(ShowWindowAnimationProperty, value); }
         }
-        #endregion
 
-        #region CloseWindowAnimation
 
         public static readonly DependencyProperty CloseWindowAnimationProperty =
            DependencyProperty.Register(nameof(CloseWindowAnimation), typeof(Action<BaseWindow>), typeof(BaseWindow), new PropertyMetadata(default(Action<BaseWindow>), (d, e) =>
@@ -102,10 +107,8 @@ namespace HornControl.ControlLibrary.Controls
             get { return (Action<BaseWindow>)GetValue(CloseWindowAnimationProperty); }
             set { SetValue(CloseWindowAnimationProperty, value); }
         }
-        #endregion
 
-        #endregion
-        public new bool ShowDialog()
+        public new bool? ShowDialog()
         {
             return base.ShowDialog();
         }
@@ -117,7 +120,6 @@ namespace HornControl.ControlLibrary.Controls
 
         public void BeginClose()
         {
-            CloseWindowAnimation?.Invoke(this);
         }
 
         public virtual void RefreshHide()
@@ -126,32 +128,6 @@ namespace HornControl.ControlLibrary.Controls
 
         public virtual void Show(bool value)
         {
-            IWindowAnimationService animation = ServiceRegistry.Instance.GetInstance<IWindowAnimationService>();
-
-            if (animation == null)
-            {
-                if (value)
-                {
-                    Show();
-                }
-                else
-                {
-                    this.Close();
-                }
-            }
-            else
-            {
-                if (value)
-                {
-                    animation?.ShowAnimation(this);
-                }
-                else
-                {
-                    animation?.CloseAnimation(this);
-                }
-            }
-
         }
-
     }
 }

@@ -5,12 +5,11 @@ VisualStudioVersion = 17.10.34928.147
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{48D39A95-0D27-4AB0-A89E-0028B1B9FCF3}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GoableConfig", "GoableConfig", "{A7D51C1C-5C49-4F1F-AD4A-D2D63A50E21F}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "goableconfig", "goableconfig", "{A7D51C1C-5C49-4F1F-AD4A-D2D63A50E21F}"
 	ProjectSection(SolutionItems) = preProject
-		..\..\github\lepoco\wpfui\.editorconfig = ..\..\github\lepoco\wpfui\.editorconfig
 		ClearCode.bat = ClearCode.bat
 		K.ico = K.ico
-		Directory1.Build.props = Directory1.Build.props
+		Directory.Build.props = Directory.Build.props
 		K.png = K.png
 		NuGet.config = NuGet.config
 	EndProjectSection

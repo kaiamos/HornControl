@@ -5,9 +5,9 @@
 		<LangVersion>latest</LangVersion>
 		<Copyright>Copyright © xukai 2024</Copyright>
 		<Authors>xukai</Authors>
-		<RepositoryUrl>https://gitee.com/kamos/HornControl;</RepositoryUrl>
+		<RepositoryUrl>https://gitee.com/kamos/HornControl;https://github.com/kaiamos/HornControl.git;</RepositoryUrl>
 	</PropertyGroup>
 	<PropertyGroup>
-		<PackagesCommonFrameworks>net6.0-windows;net8.0-windows;net481;net461</PackagesCommonFrameworks>
+		<PackagesCommonFrameworks>net6.0-windows;net461</PackagesCommonFrameworks>
 	</PropertyGroup>
 </Project>
